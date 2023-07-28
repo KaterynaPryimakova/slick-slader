@@ -1,8 +1,132 @@
-.multiple-items {
+body {
+    background-color: rgb(244, 217, 182);
+    color: antiquewhite;
+    font-style: italic;
+    font-size: larger;
+}
+
+.slick-slider {
+    background-color: rgb(67, 31, 41);
+    width: 1158px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    border-radius: 2%;
 }
 .img-wrap {
+    border: 1px solid antiquewhite;
 }
-.card {
+.card{
+    display: block;
+    width: 100%;
 }
 .text {
+text-align: center;
+padding: 5px;
 }
+.slick-prev {
+    left: -35px;
+}
+.slick-prev:before {
+    content: '←';
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color:  rgb(67, 31, 41);
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1.5;
+    opacity: 0.75;
+    color:  rgb(67, 31, 41);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.your-class > div {
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+    border: 2px solid white;
+  }
+  
+  .my-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  
+  .my-dots li button:hover,
+  .my-dots li button:focus {
+    outline: none;
+  }
+  
+  .my-dots li button:hover:before,
+  .my-dots li button:focus:before {
+    opacity: 1;
+  }
+  
+  .my-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 28px;
+    content: url(../images/heart.svg);
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+  }
+  
+  .my-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+  }
+  
